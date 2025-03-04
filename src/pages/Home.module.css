@@ -1,0 +1,164 @@
+.expense {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    min-height: 50vh;
+    justify-content: center;
+
+
+}
+
+.expense h1 {
+    font-size: 25px;
+    text-align: start;
+
+}
+
+.container {
+    width: 70%;
+    display: flex;
+
+}
+
+.container img {
+    width: 350px;
+}
+
+.containerFluxo {
+    width: 100%;
+    justify-self: center;
+
+
+}
+
+
+
+.fluxoGastos {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.itens {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.item {
+    cursor: text;
+    font-size: 1em;
+    color: #f7f7f7;
+    background-color: #5e17eb;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0.5em;
+    width: 150px;
+    border-radius: 10px;
+    gap: 5px;
+    padding: 12px 20px;
+    font-size: 20px;
+}
+
+.itemText {
+    font-size: 13px;
+}
+
+.minhasDespesas {
+    margin-top: 20px;
+    font-size: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.minhasDespesas h1 {
+    width: 70%;
+}
+.expenseBtns {
+    width: 70%;
+    margin-bottom: 15px;
+}
+.expenseBtns button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5e17eb;
+    color: #fff;
+    cursor: pointer;
+}
+.formulario {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+}
+
+.expenseContainer {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+}
+
+
+
+@media (max-width:1200px) {
+    .svgContainer {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .expenseContainer {
+        width: 100%;
+
+    }
+
+    .minhasDespesas h1 {
+        width: 100%;
+    }
+    .expenseBtns {
+        width: 100%;
+    
+    }
+
+}
+
+@media (max-width:600px) {
+
+    .expense {
+        padding: 20px;
+    }
+
+    .itens {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .item {
+
+        width: 100px;
+
+    }
+}

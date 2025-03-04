@@ -1,0 +1,95 @@
+.edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.editContainer{
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+}
+.btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+}
+.fechar {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.fechar svg{
+    font-size: 30px;
+    rotate: 45deg;
+    color: #4a12c2;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+.formulario h1{
+    font-size: 23px;
+    padding: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.campo {
+    margin-bottom: 15px;
+    transition: all ease-in .3s;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 15px 0;
+    color: #333;
+}
+
+.campo input,
+.campo select {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    appearance: none;
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-bottom-color: #5e17eb;
+}
+
+.botaoCriar {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #5e17eb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.botaoCriar:hover {
+    background-color: #4a12c2;
+}
+@media (max-width:600px) {
+    .modal {
+        background: #fff;
+        padding: 20px;
+        margin: 0 10px;
+        border-radius: 8px;
+        width: 100%;
+        position: relative;
+    }
+    
+}

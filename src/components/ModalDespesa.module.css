@@ -1,0 +1,169 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.modal h2 {
+    font-size: 20px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.closeBtn {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    color: #5e17eb;
+}
+
+.closeBtn svg {
+    font-size: 40px;
+    rotate: 45deg;
+}
+
+.nav {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.nav span {
+    cursor: pointer;
+    margin: 0 30px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease-in-out;
+}
+.active{
+    border-bottom: 2px solid #5e17eb !important;
+}
+.nav span:hover{
+    border-bottom: 2px solid #5e17eb;
+}
+.ulData {
+    padding: 0;
+    list-style: none;
+    color: #5e17eb;
+    font-weight: 600;
+    min-height: 290px;
+    max-height: 290px;
+    padding-bottom: 20px;
+    overflow-y: scroll;
+}
+
+.ulData span {
+    color: #000;
+}
+
+.ulData li {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    text-decoration: none;
+}
+.ulData select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background: transparent;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #5e17eb;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='20' height='20' fill='%235e17eb'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-size: 16px;
+    padding-right: 25px;
+    font-weight: 600;
+}
+
+.ulData select:focus {
+    outline: none;
+}
+
+
+.btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.btns button {
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    margin-right: 5px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 10px;
+}
+.editBtn{
+    background-color: #5e17eb;
+    color: #ffff;
+    cursor:not-allowed !important;
+}
+.deleteBtn{
+    background-color: #000;
+    color: #ffff;
+    transition: all .3s ease-in-out;
+}
+.deleteBtn:hover{
+    background-color: #1f1e1e;
+    color: #ffff;
+}
+.editBtn svg,.deleteBtn svg {
+    font-size: 18px;
+}
+.saveBtn{
+    margin-top:20px;
+    text-align: end;
+    
+}
+.saveBtn button{
+    border: none;
+    background-color: #5e17eb;
+    color: #ffff;
+    width: 100px;
+    padding: 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.saveBtn button:hover{
+
+    background-color: #5214ce;
+    
+}
+@media (max-width:600px) {
+    .modal{
+       width: 85%;
+       padding: 20px;
+    }
+}
